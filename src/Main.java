@@ -10,12 +10,7 @@ public class Main {
         else if (isAdvantage(pointsPlayer1, PointsPlayer2))
         {
             String score = "";
-            int minusResult = pointsPlayer1 - PointsPlayer2;
-            if (minusResult==1) score ="Advantage player1";
-            else if (minusResult ==-1) score ="Advantage player2";
-            else if (minusResult>=2) score = "Win for player1";
-            else score ="Win for player2";
-            return score;
+            return getAdvantage(pointsPlayer1, PointsPlayer2);
         }
 
         else if (pointsPlayer1 >= 4 || PointsPlayer2 >= 4)
@@ -31,6 +26,16 @@ public class Main {
             return getPuntuacionSinVentajaoEmpate(pointsPlayer1, PointsPlayer2);
 
         }
+    }
+
+    private static String getAdvantage(int pointsPlayer1, int PointsPlayer2) {
+        String score;
+        int minusResult = pointsPlayer1 - PointsPlayer2;
+        if (minusResult==1) score ="Advantage player1";
+        else if (minusResult ==-1) score ="Advantage player2";
+        else if (minusResult>=2) score = "Win for player1";
+        else score ="Win for player2";
+        return score;
     }
 
     private static boolean isAdvantage(int pointsPlayer1, int PointsPlayer2) {
