@@ -291,8 +291,23 @@ Podemos seleccionar diferentes elementos para mostrar su menú de refactorizaci�
 
 2. Use el extract method en el primer fragmento de codigo para tener un metodo independiente y reutilizable y evitar la repetecion de codigo.
 
+
+
 3. Extraje dos fragmentos de codigo en los metodos **isTie** y **isAdvantageorWin** para mantener dos metodos independientes
+
+
 
 4. Hice la extraccion de otro fragmento en el metodo getRegularScores
 
+
+
 5. Realice la eliminacion de variables innecesarias y los cambie por **returns**
+
+
+
+
+6. Borre las variables tempScore y score en ciertos metodos para evitar usar más variables de 
+manera innecesaria
+
+
+7. 
