@@ -16,16 +16,21 @@ public class Main {
         else if (isWin(pointsPlayer1, PointsPlayer2))
     {
         String score = "";
-        int minusResult = pointsPlayer1 - PointsPlayer2;
-        if (minusResult>=2) score = "Win for player1";
-        else score ="Win for player2";
-        return score;
+        return getWinScore(pointsPlayer1, PointsPlayer2);
     }
         else
         {
             return getPuntuacionSinVentajaoEmpate(pointsPlayer1, PointsPlayer2);
 
         }
+    }
+
+    private static String getWinScore(int pointsPlayer1, int PointsPlayer2) {
+        String score;
+        int minusResult = pointsPlayer1 - PointsPlayer2;
+        if (minusResult>=2) score = "Win for player1";
+        else score ="Win for player2";
+        return score;
     }
 
     private static boolean isWin(int pointsPlayer1, int PointsPlayer2) {

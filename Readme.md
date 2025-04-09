@@ -326,3 +326,5 @@ manera innecesaria
 
 
 14. Extraemos el metodo isWin
+
+15. Extraemos el metodo getWinScore
