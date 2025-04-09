@@ -289,4 +289,5 @@ Podemos seleccionar diferentes elementos para mostrar su men√∫ de refactorizaci√
 1. He modificado el nombre de las variables para que la informacion tenga mayor claridad.
 
 
-2. 
+2. Use el extract method en el primer fragmento de codigo para tener un metodo independiente y reutilizable y evitar la repetecion de codigo.
+
