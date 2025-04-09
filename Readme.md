@@ -293,4 +293,5 @@ Podemos seleccionar diferentes elementos para mostrar su men√∫ de refactorizaci√
 
 3. Extraje dos fragmentos de codigo en los metodos **isTie** y **isAdvantageorWin** para mantener dos metodos independientes
 
-4. 
+4. Hice la extraccion de otro fragmento en el metodo getRegularScores
+

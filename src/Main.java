@@ -15,29 +15,35 @@ public class Main {
         }
         else
         {
-            for (int i=1; i<3; i++)
-            {
-                if (i==1) tempScore = pointsPlayer1;
-                else { score+="-"; tempScore = PointsPlayer2;}
-                switch(tempScore)
-                {
-                    case 0:
-                        score+="Love";
-                        break;
-                    case 1:
-                        score+="Fifteen";
-                        break;
-                    case 2:
-                        score+="Thirty";
-                        break;
-                    case 3:
-                        score+="Forty";
-                        break;
-                }
-            }
+            score = getRegularScores(pointsPlayer1, PointsPlayer2, score);
 
         }
     return score;
+    }
+
+    private static String getRegularScores(int pointsPlayer1, int PointsPlayer2, String score) {
+        int tempScore;
+        for (int i = 1; i<3; i++)
+        {
+            if (i==1) tempScore = pointsPlayer1;
+            else { score +="-"; tempScore = PointsPlayer2;}
+            switch(tempScore)
+            {
+                case 0:
+                    score +="Love";
+                    break;
+                case 1:
+                    score +="Fifteen";
+                    break;
+                case 2:
+                    score +="Thirty";
+                    break;
+                case 3:
+                    score +="Forty";
+                    break;
+            }
+        }
+        return score;
     }
 
     private static String getAdvantageorWinScores(int pointsPlayer1, int PointsPlayer2) {
