@@ -311,3 +311,6 @@ manera innecesaria
 
 
 7.  Elimine el uso de la variable Score del metodo gettieScore y lo cambie por un return directo
+
+8. Renombrar la variable PointsPlayer1 en el metodo gettieScore a PointPlayers para seguir la logica
+
