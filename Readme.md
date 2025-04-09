@@ -310,4 +310,4 @@ Podemos seleccionar diferentes elementos para mostrar su men√∫ de refactorizaci√
 manera innecesaria
 
 
-7. 
+7.  Elimine el uso de la variable Score del metodo gettieScore y lo cambie por un return directo

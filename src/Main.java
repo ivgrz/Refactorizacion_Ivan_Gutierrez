@@ -64,27 +64,25 @@ public class Main {
     }
 
     private static String getTieScore(int pointsPlayer1) {
-        String score = "";
         switch (pointsPlayer1)
         {
             case 0:
-                score = "Love-All";
-                break;
+               return "Love-All";
+
             case 1:
-                score = "Fifteen-All";
-                break;
+                return  "Fifteen-All";
+
             case 2:
-                score = "Thirty-All";
-                break;
+                return "Thirty-All";
+
             case 3:
-                score = "Forty-All";
-                break;
+                return "Forty-All";
+
             default:
-                score = "Deuce";
-                break;
+                return "Deuce";
+
 
         }
-        return score;
     }
 
     private static boolean isTie(int pointsPlayer1, int PointsPlayer2) {
