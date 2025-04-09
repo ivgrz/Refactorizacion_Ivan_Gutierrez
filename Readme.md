@@ -317,4 +317,7 @@ manera innecesaria
 10. Eliminamos el Switch del metodo getTieScore y hacemos un array con un return
 
 
-11. Usamos la opcion inline method para eliminar los metodos de 
+11. Usamos la opcion inline method para eliminar los metodos de getAdvantageorWinScores y isAdvantage
+
+
+12. Duplicamos parte del codigo del metodo getScore y hacemos el **test with Coverage**, luego extraemos el metodo isAdvantage 

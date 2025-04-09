@@ -7,7 +7,7 @@ public class Main {
         if (isTie(pointsPlayer1, PointsPlayer2)) {
             return getTieScore(pointsPlayer1);
         }
-        else if (pointsPlayer1 >= 4 || PointsPlayer2 >= 4)
+        else if (isAdvantage(pointsPlayer1, PointsPlayer2))
         {
             String score = "";
             int minusResult = pointsPlayer1 - PointsPlayer2;
@@ -17,13 +17,27 @@ public class Main {
             else score ="Win for player2";
             return score;
         }
+
+        else if (pointsPlayer1 >= 4 || PointsPlayer2 >= 4)
+    {
+        String score = "";
+        int minusResult = pointsPlayer1 - PointsPlayer2;
+        if (minusResult>=2) score = "Win for player1";
+        else score ="Win for player2";
+        return score;
+    }
         else
         {
             return getPuntuacionSinVentajaoEmpate(pointsPlayer1, PointsPlayer2);
 
         }
     }
-        private static String getPuntuacionSinVentajaoEmpate(int pointsPlayer1, int pointsPlayer2 ) {
+
+    private static boolean isAdvantage(int pointsPlayer1, int PointsPlayer2) {
+        return (pointsPlayer1 >= 4 || PointsPlayer2 >= 4) && (pointsPlayer1 - PointsPlayer2 == 1 || pointsPlayer1 - PointsPlayer2 == -1);
+    }
+
+    private static String getPuntuacionSinVentajaoEmpate(int pointsPlayer1, int pointsPlayer2 ) {
             String score = "";
         score = getRegularScores(pointsPlayer1, score);
         score +="-";
