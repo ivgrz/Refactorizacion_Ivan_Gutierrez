@@ -295,3 +295,4 @@ Podemos seleccionar diferentes elementos para mostrar su men√∫ de refactorizaci√
 
 4. Hice la extraccion de otro fragmento en el metodo getRegularScores
 
+5. Realice la eliminacion de variables innecesarias y los cambie por **returns**
