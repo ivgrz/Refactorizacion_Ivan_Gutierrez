@@ -284,3 +284,9 @@ Podemos seleccionar diferentes elementos para mostrar su menú de refactorizaci�
 
 ----
 <sub>[(*artículo original*)](https://entornos.abrilcode.com/doku.php?id=apuntes:refactorizacion)</sub>
+
+ # CAMBIOS REFACTORIZACION:
+1. He modificado el nombre de las variables para que la informacion tenga mayor claridad.
+
+
+2. 
