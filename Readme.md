@@ -315,3 +315,6 @@ manera innecesaria
 8. Renombrar la variable PointsPlayer1 en el metodo gettieScore a PointPlayers para seguir la logica
 
 10. Eliminamos el Switch del metodo getTieScore y hacemos un array con un return
+
+
+11. Usamos la opcion inline method para eliminar los metodos de 

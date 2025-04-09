@@ -7,9 +7,15 @@ public class Main {
         if (isTie(pointsPlayer1, PointsPlayer2)) {
             return getTieScore(pointsPlayer1);
         }
-        else if (isAdvantageorWin(pointsPlayer1, PointsPlayer2))
+        else if (pointsPlayer1 >= 4 || PointsPlayer2 >= 4)
         {
-            return getAdvantageorWinScores(pointsPlayer1, PointsPlayer2);
+            String score = "";
+            int minusResult = pointsPlayer1 - PointsPlayer2;
+            if (minusResult==1) score ="Advantage player1";
+            else if (minusResult ==-1) score ="Advantage player2";
+            else if (minusResult>=2) score = "Win for player1";
+            else score ="Win for player2";
+            return score;
         }
         else
         {
@@ -48,20 +54,6 @@ public class Main {
         return score;
     }
 
-
-    private static String getAdvantageorWinScores(int pointsPlayer1, int PointsPlayer2) {
-        String score = "";
-        int minusResult = pointsPlayer1 - PointsPlayer2;
-        if (minusResult==1) score ="Advantage player1";
-        else if (minusResult ==-1) score ="Advantage player2";
-        else if (minusResult>=2) score = "Win for player1";
-        else score ="Win for player2";
-        return score;
-    }
-
-    private static boolean isAdvantageorWin(int pointsPlayer1, int PointsPlayer2) {
-        return pointsPlayer1 >= 4 || PointsPlayer2 >= 4;
-    }
 
     private static String getTieScore(int pointsPlayers) {
         String []tieScores ={
