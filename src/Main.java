@@ -1,6 +1,6 @@
 public class Main {
     /**
-     * metodo para devolver la puntuacion de tenis
+     * Metodo para devolver la puntuacion de tenis
      */
     public static String getScore(int pointsPlayer1, int PointsPlayer2) {
 
@@ -26,6 +26,7 @@ public class Main {
     }
 
     private static String getWinScore(int pointsPlayer1, int PointsPlayer2) {
+
         String score;
         int minusResult = pointsPlayer1 - PointsPlayer2;
         if (minusResult>=2) score = "Win for player1";
@@ -94,4 +95,7 @@ public class Main {
     private static boolean isTie(int pointsPlayer1, int PointsPlayer2) {
         return pointsPlayer1 == PointsPlayer2;
     }
+
+
+
 }
