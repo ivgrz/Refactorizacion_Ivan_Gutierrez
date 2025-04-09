@@ -321,3 +321,8 @@ manera innecesaria
 
 
 12. Duplicamos parte del codigo del metodo getScore y hacemos el **test with Coverage**, luego extraemos el metodo isAdvantage 
+
+13. Extraemos el metodo getAdvantage
+
+
+14. Extraemos el metodo isWin
